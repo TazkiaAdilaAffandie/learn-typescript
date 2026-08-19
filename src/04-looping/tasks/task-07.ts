@@ -18,3 +18,4 @@ const attendances = [
   { name: "Gita", present: true },
   { name: "Hana", present: false }
 ];
+

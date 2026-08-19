@@ -22,3 +22,28 @@
  * 2. Implement the logic using nested if statements.
  * 3. Display the reservation result.
  */
+
+const customerName: string = 'Nadia Putri'
+const isPremiumMember: boolean = true
+const isRoomAvailable: boolean = false
+
+let resultReservationMessage: string = ''
+
+if (isRoomAvailable) {
+    if (isPremiumMember) {
+        resultReservationMessage = `Room available. Premium member receives a free room upgrade.`
+    } else {
+        resultReservationMessage = `Room available. Regular customer receives the reserved room only.`
+    }
+} else {
+    if (isPremiumMember) {
+        resultReservationMessage = `No room available. Premium member is placed on the priority waiting list.`
+    } else {
+        resultReservationMessage = `No room available. Regular customer is informed that no rooms are available.`
+    }
+}
+
+console.log(`Customer Name: ${customerName}`)
+console.log(`Premium Member: ${isPremiumMember ? "Yes" : "No"}`)
+console.log(`Room Available: ${isRoomAvailable ? "Yes" : "No"}`)
+console.log(`Result: ${resultReservationMessage}`)

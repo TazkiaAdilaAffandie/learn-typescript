@@ -34,7 +34,7 @@ const student2: Student = {
 
 const student3: Student = {
     studentId: `ST2026003`,
-    fullName: `Fatih Abudhab`,
+    fullName: `Fatih Abudhabi`,
     age: 16,
     isActive: false,
 }

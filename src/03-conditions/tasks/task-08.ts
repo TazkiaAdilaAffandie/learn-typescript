@@ -27,3 +27,25 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
+const passengerName: string = `Fajar Nugroho`
+const hasOnlineCheckin: boolean = true
+const cabinClass: string = `Economy`
+const baggageWeight: number = 24
+let resultMessage: string = ``
+
+if (!hasOnlineCheckin) {
+    resultMessage = `Please complete online check-in first.`
+} else if (baggageWeight > 20 && cabinClass === `Business`) {
+    resultMessage = `Extra baggage allowed.`
+} else if (baggageWeight > 20 && cabinClass === `Economy`) {
+    resultMessage = `Additional baggage fee required.`
+} else {
+    resultMessage = `Proceed to boarding pass printing.`
+}
+
+console.log(`Passenger: ${passengerName}`)
+console.log(`Online Check-in: ${hasOnlineCheckin ? "Yes" : "No"}`)
+console.log(`Cabin Class: ${cabinClass}`)
+console.log(`Baggage Weight: ${baggageWeight} kg`)
+console.log(`Result: ${resultMessage}`)

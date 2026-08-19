@@ -17,3 +17,22 @@
  * - Bonus
  * - Final salary
  */
+
+let employeeName = "Dimas";
+let basicSalary = 5000000;
+let overtimeHours = 12;
+let overtimeRate = 50000;
+
+let overtimePay = overtimeHours * overtimeRate; 
+let bonus = 0;
+if (overtimeHours > 10) {
+    bonus = 300000;
+}
+
+let finalSalary = basicSalary + overtimePay + bonus;
+
+console.log("Employee Name: " + employeeName);
+console.log("Overtime Pay: Rp" + overtimePay);
+console.log("Bonus: Rp" + bonus);
+console.log("Final Salary: Rp" + finalSalary);
+

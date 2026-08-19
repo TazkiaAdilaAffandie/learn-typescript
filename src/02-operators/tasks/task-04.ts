@@ -22,3 +22,22 @@
  *  - Calculate the final payment.
 
  */
+
+const mechanicalkeyboardPrice: number = 850000
+const mechanicalkeyboardQuantity: number = 1
+
+const wirelessmousePrice: number = 275000
+const wirelessmouseQuantity: number = 2
+
+const mousepadPrice: number = 120000
+const mousepadQuantity: number = 1
+
+const isPremiumMember: boolean = true
+
+const subtotal: number = (mechanicalkeyboardPrice * mechanicalkeyboardQuantity) + (wirelessmousePrice * wirelessmouseQuantity) + (mousepadPrice * mousepadQuantity)
+
+const totalitemPurchased = (mechanicalkeyboardQuantity + wirelessmouseQuantity + mousepadQuantity)
+
+
+console.log("Total Items Purchased: " + totalitemPurchased )
+console.log("Subtotal: " + subtotal) 

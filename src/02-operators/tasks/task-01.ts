@@ -14,3 +14,20 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+let friedRiceQty = 3;
+let friedRicePrice = 18000;
+let waterQty = 2;
+let waterPrice = 5000;
+let discount = 10000;
+
+let totalFood = friedRiceQty * friedRicePrice;  
+let totalDrink = waterQty * waterPrice;         
+let grandTotal = totalFood + totalDrink;         
+let finalPayment = grandTotal - discount;        
+
+
+console.log("Total Fried Rice: Rp" + totalFood);
+console.log("Total Drinks: Rp" + totalDrink);
+console.log("Grand Total: Rp" + grandTotal);
+console.log("Final Payment: Rp" + finalPayment);
